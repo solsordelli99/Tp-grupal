@@ -1,76 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛍️ Locales Comerciales </title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Galeria La Trama - Promociones</title>
 
-    
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
+    <header class="header-top">
+        <div class="header-info"></div>
+    </header>
+
+    <header class="header-flex">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo Galerías" class="logo">
+            <div class="gallery-title">
+                <h1>Galeria La Trama</h1>
+            </div>
+        </div>
         <nav>
-            <ul class="categorias menu-nav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="entretenimento.html">Entretenimiento</a></li>
+            <ul class="nav-menu-horizontal">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="entretenimento.html">Entretenimientos</a></li>
                 <li><a href="locales-comerciales.html">Locales Comerciales</a></li>
+                <li><a href="promociones.html">Ofertas</a></li>
+                <li><a href="">Gastronomía</a></li>
+                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
-        
-        <section class="locales">
-            <h2>Nuestros locales</h2>
-        
-            <!-- Categorías -->
-            <div class="categorias">
-                <button data-cat="Joyas" class="active">Joyas</button>
-                <button data-cat="libros">Libros</button>
-                <button data-cat="juegos">Juegos</button>
-                <button data-cat="todos">Todos</button>
+    </header>
+    <main>
+    <section class="promo-panel locales">
+        <h2>Nuestros locales</h2>
 
+        <!-- Categorías -->
+        <div class="categorias">
+            <button data-cat="Joyas" class="active">Joyas</button>
+            <button data-cat="libros">Libros</button>
+            <button data-cat="juegos">Juegos</button>
+            <button data-cat="todos">Todos</button>
+        </div>
+
+        <!-- Logos + descripciones -->
+        <div class="grid-logos">
+            <!-- JOYAS -->
+            <div class="logo-wrapper joyas logo-item">
+                <a href="https://solsordelli99.github.io/Trabajo-obligatorio-Local-comercial/index.html" target="_blank">
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/03/Logo-Pandora.png" alt="Pandora">
+                </a>
+                <p class="descripcion">
+                    Pandora ofrece joyería moderna y personalizada, con anillos, pulseras y dijes icónicos diseñados para acompañarte todos los días.
+                </p>
             </div>
-        
-            <!-- Logos -->
-            <!-- Logos + descripciones -->
-<div class="grid-logos">
 
-    <!-- JOYAS -->
-    <div class="logo-wrapper joyas logo-item">
-        <a href="https://solsordelli99.github.io/Trabajo-obligatorio-Local-comercial/index.html" target="_blank">
-            <img src="https://1000marcas.net/wp-content/uploads/2020/03/Logo-Pandora.png" alt="Pandora">
-        </a>
-        <p class="descripcion">Pandora ofrece joyería moderna y personalizada, con anillos, pulseras y dijes icónicos diseñados para acompañarte todos los días.</p>
-    </div>
+            <!-- LIBROS -->
+            <div class="logo-wrapper libros logo-item">
+                <a href="https://deoliva-13.github.io/TP-LocalComercial-SegundaEntrega/" target="_blank">
+                    <img src="https://deoliva-13.github.io/TP-LocalComercial-SegundaEntrega/Logo%20de%20librer%C3%ADa%20Lily.png" alt="Lily Bookstore">
+                </a>
+                <p class="descripcion">
+                    Lily Bookstore es una librería dedicada a la lectura para todas las edades, con una cuidada selección de novelas, cuentos y clásicos.
+                </p>
+            </div>
 
-    <!-- LIBROS -->
-    <div class="logo-wrapper libros logo-item">
-        <a href="https://deoliva-13.github.io/TP-LocalComercial-SegundaEntrega/" target="_blank">
-            <img src="https://deoliva-13.github.io/TP-LocalComercial-SegundaEntrega/Logo%20de%20librer%C3%ADa%20Lily.png" alt="Lily Bookstore">
-        </a>
-        <p class="descripcion">Lily Bookstore es una librería dedicada a la lectura para todas las edades, con una cuidada selección de novelas, cuentos y clásicos.</p>
-    </div>
+            <div class="logo-wrapper libros logo-item">
+                <a href="https://manubogliani.github.io/manucomics.galeria/" target="_blank">
+                    <img src="https://manubogliani.github.io/manucomics.galeria/logoMC.png" alt="Manu Comics">
+                </a>
+                <p class="descripcion">
+                    Manu Comics es un espacio para amantes del cómic, con historietas, manga y coleccionables para fans de todas las sagas.
+                </p>
+            </div>
 
-    <div class="logo-wrapper libros logo-item">
-        <a href="https://manubogliani.github.io/manucomics.galeria/" target="_blank">
-            <img src="https://manubogliani.github.io/manucomics.galeria/logoMC.png" alt="Manu Comics">
-        </a>
-        <p class="descripcion">Manu Comics es un espacio para amantes del cómic, con historietas, manga y coleccionables para fans de todas las sagas.</p>
-    </div>
+            <!-- JUEGOS -->
+            <div class="logo-wrapper juegos logo-item">
+                <a href="https://poweredhelmetstore.vercel.app/index.html" target="_blank">
+                    <img src="https://poweredhelmetstore.vercel.app/img/PowerRedHelmetStore.png" alt="Power Red Helmet Store">
+                </a>
+                <p class="descripcion">
+                    Power Red Helmet Store ofrece cascos del universo Power Rangers, ideal para coleccionistas y fanáticos de la acción.
+                </p>
+            </div>
 
-    <!-- JUEGOS -->
-    <div class="logo-wrapper juegos logo-item">
-        <a href="https://poweredhelmetstore.vercel.app/index.html" target="_blank">
-            <img src="https://poweredhelmetstore.vercel.app/img/PowerRedHelmetStore.png" alt="Power Red Helmet Store">
-        </a>
-        <p class="descripcion">Power Red Helmet Store ofrece cascos del universo Power Rangers, ideal para coleccionistas y fanáticos de la acción.</p>
-    </div>
+        </div>
+    </section>
+</main>
 
-</div>
+        <footer class="footer-gallery">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.jpg" alt="Logo Galerías" class="footer-logo-img">
+                    </div>
+                </div>
 
-            
-        </section>
-        <script src="locales.js"></script>
+                <div class="footer-section">
+                    <h3>UBICACIÓN</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Córdoba 550, C1054 CABA</p>
+                    <p><i class="fas fa-phone"></i> 011 5555-5110</p>
+                    <p><i class="fas fa-envelope"></i> info@galerialatrama.com.ar</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>HORARIOS</h3>
+                    <p><i class="fas fa-clock"></i> Locales Comerciales</p>
+                    <p>Lunes a Domingo: 10 A 21 H</p>
+                    <p style="margin-top: 15px;"><i class="fas fa-utensils"></i> Locales Gastronómicos</p>
+                    <p>Lunes a Domingo: 10 A 22 H</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>SÍGUENOS</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Galeria La Trama - Todos los derechos reservados</p>
+                <p>Designed by <span class="designer">Tu Empresa</span></p>
+            </div>
+        </footer>
+
+    <script src="locales.js"></script>
+</body>
+</html>
         
       
